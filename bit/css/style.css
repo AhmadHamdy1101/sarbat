@@ -1,0 +1,797 @@
+/*
+first color :#121212
+scend color : #000000
+thred color : 757575
+gradint color: #87246e to #d70922
+
+font:
+ــــــ
+Montserrat
+[NotoSans]
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+}
+/*start nav bar*/
+nav{
+    position: relative;
+}
+
+.container{
+    width: 80%;
+    
+    margin: auto;
+    position: relative;
+}
+.navbar{
+    display: flex;
+    transition: 0.2c ease-out;
+    
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    
+    z-index: 2;
+    transform: translate(0px,40px);
+   
+}
+.logo{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 6px;
+    
+
+}
+.logo-outline{
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+
+}
+.bat{
+    position: absolute;
+    z-index: 2;
+    width: 30px;
+   transform: translate(10px,25px);
+
+}
+ .sar{
+    position: absolute;
+    z-index: 3;
+    width: 30px;
+    transform: translate(10px,10px);
+}
+.menu{
+    position: relative;
+    cursor: pointer;
+    float: right;
+    bottom: 52px;
+    width: 60px;
+    height: 50px;
+}
+.icon-outline{
+    position: relative;
+    width: 40px;
+}
+.icon{
+    position: relative;
+    transform: translate(8px,35.5px);
+}
+.scrolling-active{
+    background: linear-gradient( 173deg ,#121212,#121212db);
+    transform: translate(0px,0px);
+    height: 65px;
+    transition: 1 ease;
+   box-shadow:  0px 9px 18px 11px rgb(0 0 0 / 50%), 0px 0px 13px 2px rgb(0 0 0);
+}
+@keyframes fadein {
+    0%{height: 0vh;opacity: 0;}
+    25%{height: 50vh;opacity: 0;}
+    50%{height: 60vh;opacity: 0 ;}
+    100%{height: 100vh;opacity: 1;}
+    
+}
+.menu-list{
+   display: none;
+    transition: 0.2s ease-out;
+    position: fixed;
+    float: left;
+   animation-name: fadein;
+   animation-duration: 0.5s;
+    width: 35%;
+    height: 100vh;
+    transform: translate(847px, 0px);
+    z-index: 3;
+    box-shadow: -16px 0px 20px 0px rgb(0 0 0 / 53%);
+}
+
+.menu-list .close-menu{
+    display: none;
+   
+
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    transform: translate(440px,30px);
+    cursor: pointer;
+    font-size: 40px;
+    font-weight:100;
+}
+.menu-list ul{
+    
+    position: relative;
+    align-items: center;
+    margin: auto;
+    display:inline-block;
+    justify-content: center;
+    width:100%;
+    height: 100vh;
+    background-color: #121212;
+}
+.menu-list ul li{
+    position: relative;
+    list-style-type: none;
+    align-items: center;
+    margin: 61px 40%;
+    
+    
+
+
+}
+.menu-list ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight:bold;
+    font-size: 20px;
+}
+.menu-list ul li a:hover{
+    background: -webkit-linear-gradient( #87246e, #d70922);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+
+/*end navbar*/
+/*start slider*/
+.slider{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 100vh;
+}
+.slider-img{
+    
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    
+}
+.slider-img img{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    z-index: -1;
+}
+.slider-content{
+    z-index: 1;
+    position: relative;
+    width: 50%;
+    transform: translate(500px,300px);
+}
+.slider-content img{  
+    position: relative;  
+    z-index: 1;
+    object-position: center;
+    object-fit: cover;
+    width: 50vh;
+}
+/*End slider*/
+/*start services*/
+.service{
+    width: 100%;
+    
+}
+.service h1{
+    color: #fff;
+    font-weight: bold;
+    font-size: 40px;
+}
+.service .services-cont{
+    margin-top: 20px;
+
+    display: flex;
+
+}
+.service .services-cont img{
+    width: 40px;
+}
+.service .services-cont .line{
+    width: 41px;
+    margin-top: 10px;
+    background-color: #fff;
+    height: 2px;
+}
+.service .services-cont h3{
+    font-family: 'Montserrat';
+    color: #fff;
+}
+.service .services-cont p{
+    font-family: 'Montserrat';
+    color: #fff;
+}
+/*End services*/
+/*start portoflio*/
+.gallary{
+    width: 100%;
+}
+.gallary-con{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+.gallary-con .gal1{
+    width: 40vh;
+
+}
+.gallary-con .gal2{
+    width: 40vh;
+
+}
+.gallary-con .gal3{
+    width: 40vh;
+
+}
+.gallary-con .gal4{
+    width: 40vh;
+
+}
+.gallary-con .gal5{
+    width: 40vh;
+
+}
+
+.gallary-con .g1{
+    height: 40vh;
+    width: 100%;
+    border: 2px solid #000;
+   background-color: #fff;
+
+}
+.gallary-con .g2{
+    height: 30vh;
+    width: 100%;
+    border: 2px solid #000;
+   background-color: #fff;    
+
+}
+.gallary-con .g3{
+    height: 20vh;
+    width: 100%;
+    border: 2px solid #000;
+ background-color: #fff;
+   
+
+
+}
+.gallary-con .g4{
+    height: 30vh;
+    width: 100%;
+    border: 2px solid #000;
+   background-color: #fff;    
+
+}
+.gallary-con .g5{
+    height: 40vh;
+    width: 100%;
+    border: 2px solid #000;
+ background-color: #fff;
+   
+
+
+}
+.gallary-hov{
+    width: 100%;
+    height: 80px;
+    display: none;
+   
+    background: linear-gradient( to right, #87246e, #d70922);
+}
+.gallary-hov h4{
+    color: #fff;
+    font-weight: bold;
+    transform: translate(0px,10px);
+    text-align: center;
+}
+.gallary-hov a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    margin-top: 25px;
+    justify-content: center;
+
+}
+.porfolio button{
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-weight: bold;
+    transform: translate(0px ,50px);
+    border: none;
+    height: 30px;
+    text-align: center;
+    font-family: 'Montserrat';
+    margin: auto;
+    background: linear-gradient(to right, #87246e,#d70922);
+}
+/*start portoflio*/
+/*start prosses*/
+.pros{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.pros h1{
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.prosses{
+    display: flex;
+    justify-content: space-around;
+}
+.pross-hed{
+    display: flex;
+    
+}
+.prosses h2{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 50px;
+
+}
+.prosses h5{
+    color: #757575;
+    font-weight: bold;
+    font-style: italic;
+    font-family: initial;
+    margin-top: 10px;
+}
+.prosses .line-prosses{
+    width: 100px;
+    height: 3px;
+    margin-bottom: 30px;
+    background: linear-gradient(to right,#87246e,#d70922);
+}
+.prosses h6{
+    color: #ffffff;
+    font-weight: bold;
+}
+.prosses p{
+    color: #999999 ;
+}
+.pross{
+    margin-left: 10px;
+}
+/*end prosses*/ 
+/*start clients*/
+.client-cont{
+    display: flex;
+    justify-content: space-between;
+    transform: translate(10px ,50px);
+}
+.clients{
+    position: relative;
+    height: 50vh;
+    background: linear-gradient(to right ,#87246e,#d70922);
+}
+.clients h1{
+   transform: translate(10px,50px);
+    color: #ffffff;
+    font-weight:bold;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.clients .client{
+    margin-bottom: 50px;
+}
+
+/*end clients*/
+/*start pricing*/
+.plans{
+    display: flex;
+    width: 100%;
+
+}
+.plan-con h1{
+    color: #fff;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    
+  
+}
+.plan{
+    border: 2px solid #757575;
+    margin-left: 10px;
+    padding: 10px 20px;
+    margin-bottom: 80px;
+    width: 40%;
+    
+}
+.plan h2{
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+
+}
+.plan .price{
+    display: flex;
+    float: right;
+    position: relative;
+    margin-top: -51px;
+    
+
+}
+.plan .price h5 {
+    color: #757575;
+    font-weight: bold;
+    font-style: italic;
+    font-family: initial;
+    font-size: 30px;
+}
+.plan .price h3{
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+}
+.plan .line-plans{
+    width: 100%;
+    height: 3px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right ,#87246e,#d70922);
+}
+.plan h4{
+    color: #757575;
+    font-weight: bold;
+
+}
+.plan h4 span{
+    color: #fff;
+}
+.plan a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*End pricing*/
+/*start skills*/
+.skills{
+    position: relative;
+    width: 100%;
+   
+    background-color: #000;
+}
+.skills h1{
+    color: #fff;
+    position: relative;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    margin-bottom: 50px;
+    padding-top: 40px;
+
+}
+.progres-cont{
+    display: flex;
+    justify-content: space-around;
+}
+.skills .progres .progres-style{
+    position: relative;
+    width: 20vh;
+    
+    height:20vh;
+    border-radius: 50%;
+}
+.skills .progres .progres-style .back {
+    width: 20vh;
+    position: relative;
+    height:20vh;
+    border-radius: 50%;
+    background: linear-gradient(to right ,#87246e,#d70922);
+}
+.skills .progres-style .boint{
+    width: 25px;
+    height: 25px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(58px,55px);
+    z-index: 3;
+}
+.skills .progres .progres-style .progres-clip{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: #000;
+    clip-path: url(#myClip);
+    
+}
+.skills .progres .progres-style .progres-black{
+    width: 100%;
+    position: absolute;
+   
+    height: 100%;
+   background-color: #000;
+    clip-path: polygon(59% 35%, 100% 66%, 82% 94%, 40% 63%);
+}
+
+.progres-txt{
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 35px;
+   
+}
+.progres-txt h2{
+    font-size: 40px;
+    font-weight:bold;
+  height: 43px;
+  
+}
+.progres-txt h3{
+    font-weight: bold;
+    font-size: 20px;
+    height: 20px;
+    margin-top: 17px;
+    margin-right: 15px;
+
+}
+
+.progres-txt h2 span{
+    font-size: 20px;
+    text-align: right;
+    color: #757575;
+    
+}
+.slide-coursel{
+    width: 100%;
+    margin-top: 90px;
+    
+    
+
+}
+
+.slide-coursel .caursel-cont{
+    margin-right: 10px;
+    padding: 10px 10px;
+    display: flex;
+}
+.imag{
+    margin-right: 20px;
+}
+.slide-coursel .caursel-cont .imag .img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 15px;
+
+    background-color: #fff;
+
+}
+.slide-coursel .caursel-cont .imag .img-line{
+    width: 60px;
+    height: 3px;
+    margin-top: 20px;
+    background: linear-gradient(to right ,#87246e,#d70922);;
+}
+.slide-coursel .caursel-cont .cont-txt h2{
+    color: #fff;
+    font-size: 20px;
+}
+.slide-coursel .caursel-cont .cont-txt p{
+    color: #757575;
+    font-size: 15px;
+}
+
+/*End skills*/
+/*start blog*/
+.latest-post{
+    position: relative;
+
+}
+.latest-post h1{
+    font-weight: bold;
+    color: #fff;
+}
+.latest-post .posts{
+    display: flex;
+   justify-content: space-between;
+}
+.latest-post .posts .post{
+    padding: 10px;
+   
+    width: 40vh;
+    position: relative;
+}
+.posts .post .head{
+    display: flex;
+    text-align: center;
+    margin: 0;
+    width: 150px;
+   
+
+}
+.post .head h2{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 60px;
+    margin: 0;
+    
+}
+.posts .head h6{
+    color: #757575;
+    margin: 0 10px 0 10px;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 25px;
+}
+.posts .post .latest-line{
+    width: 30%;
+    height: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background: linear-gradient(to right , #872487,#d70922);
+}
+.posts .post font{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 25px;
+    position: relative;
+
+}
+.posts .post .more{
+    margin:30px 0px ;
+}
+.posts .post a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+
+    
+}
+.social{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.social ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.social ul li{
+    list-style-type: none;
+}
+.social ul li a{
+    color: #fff;
+    margin: 0;
+    padding: 2vh 159.4px;
+    border: 1px solid #757575;
+
+    
+
+}
+.social ul li a:hover{
+    text-shadow: 0px 0px 12px rgb(255 255 255 / 66%);    background: linear-gradient(to right, #87246e,#d70922);
+}
+.social ul li a:checked{
+    background: linear-gradient(to right, #87246e,#d70922);
+}
+/*start contact us*/
+
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    padding-bottom:100px;
+
+}
+.contact-us .info{
+    width: 40%;
+    padding: 0px 80px 0px 0px;
+}
+.info .in1 {
+    margin-bottom: 30px;
+}
+.info .in1 h6{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px 0px;
+    margin: 0;
+
+
+}
+.info .in1 p{
+    color: #757575;
+    font-weight: bolder;
+    font-size: 10px;
+
+}
+.info-sectxt{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.info-sectxt div{
+    width: 20vh;
+}
+.info-sectxt h6{
+    color: #fff;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px 0px;
+    margin: 0;
+    
+}
+.info-sectxt  p{
+    color: #757575;
+    font-weight: bolder;
+    font-size: 10px;
+
+}
+.contact-us form{
+    width: 40%;
+}
+.contact-us form input{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+margin-bottom: 20px;
+    background-color: #121212;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px solid #757575;
+
+
+}
+.contact-us form #button{
+    margin-top: 50px;
+    width: 20vh;
+    float: right;
+    font-weight: bolder;
+    border:0;
+    background: linear-gradient(to right,#872487,#d70922);
+}
+/*End contact us*/
+/*End blog*/
+
+footer{
+    width: 100%;
+    height: 45px;
+    background: linear-gradient(to right,#872487,#d70922);
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding-top: 20px;
+    
+}
